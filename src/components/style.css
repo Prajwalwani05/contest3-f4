@@ -25,10 +25,11 @@ header {
   background-color: var(--header-bg-color);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 1.5rem;
   align-items: center;
-  height: 15vh;
+  justify-content: space-between;
+  padding:.8rem;
+  align-items: center;
+  /* height: 15vh; */
   position: fixed;
   top: 0;
   z-index: 200;
@@ -40,18 +41,14 @@ header {
   width: 20%;
   padding: 0 0.8rem;
 }
-.logo-section .logo-image {
-  height: 65px;
-  width: 60px;
-}
+
 .logo-image img {
-  width: 100%;
-  height: 100%;
+  width: 3rem;
   margin-right: 10px;
 }
 .logo-section .logo-name {
-  width: 158px;
-  height: 20px;
+  width: 6rem;
+  /* height: 20px; */
 }
 .logo-name img {
   width: 100%;
@@ -63,7 +60,8 @@ header {
 }
 .search-section .input-section {
   display: flex;
-  width: 490px;
+  width: 50rem;
+  padding: .2rem;
   justify-content: space-between;
   border: 1px solid var(--light-grey);
 }
@@ -80,8 +78,8 @@ header {
   justify-content: center;
 }
 .search-image img {
-  width: 90%;
-  height: 90%;
+  /* width: 90%;
+  height: 90%; */
 }
 .input-section input {
   width: 93%;
@@ -96,10 +94,11 @@ header {
 }
 
 .icons-section {
+  
   display: flex;
   align-items: center;
   width: 20%;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .icons-section > div {
   width: 35px;
@@ -113,8 +112,9 @@ header {
   margin-left: 6px;
 }
 .icons-section > div > img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  width: 2rem;
 }
 
 main {
@@ -148,6 +148,7 @@ main {
 .book-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .book-desc {
   position: relative;
@@ -155,12 +156,12 @@ main {
   left: -8px;
   height: 184px;
   padding: 1rem;
-  font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
+
 .book-desc h1 {
   font-size: 15px;
   color: var(--white);
@@ -220,4 +221,8 @@ height: 60vh; */
   border-color: var(--white);
   cursor: pointer;
   margin-inline-start: 10px;
+}
+
+.book-list-container h1{
+  font-size: 20px;
 }
